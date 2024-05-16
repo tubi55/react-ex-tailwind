@@ -11,6 +11,15 @@
 
 @layer components {
   .thumbnail {
-    @apply relative inline-block mb-6 size-40;
+    @apply relative inline-block mb-6 size-40 [&_img]:img_circle [&_img:nth-of-type(1)]:img_shadow;
+  }
+}
+
+@layer utilities {
+  .img_circle {
+    @apply absolute object-cover rounded-full size-full;
+  }
+  .img_shadow {
+    @apply translate-y-4 blur-xl saturate-150 brightness-150;
   }
 }
