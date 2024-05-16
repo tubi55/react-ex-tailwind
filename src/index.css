@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  main {
+    @apply w-full h-screen bg-black/5 py-[10vh] px-[10vw];
+  }
   /* 기본 태그 요소명에 스타일 프리셋 지정 */
   button {
     @apply px-8 py-2 mb-0 text-sm text-white transition delay-150 scale-150 rounded-full opacity-0 bg-gradient-to-br from-slate-900 to-slate-600 drop-shadow-2xl group-hover:opacity-100 group-hover:scale-100;
@@ -10,6 +13,9 @@
 }
 
 @layer components {
+  .title_page {
+    @apply mb-20 text-6xl font-thin transition hover:text-slate-600;
+  }
   .card {
     @apply w-[300px] px-10 pt-14 pb-0 text-center bg-white rounded-xl shadow-lg transition-all opacity-80 hover:opacity-100 hover:pb-14  relative;
   }
