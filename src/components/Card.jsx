@@ -3,13 +3,13 @@ import Info from "./Info";
 import MotionBg from "./MotionBg";
 import Thumbnail from "./Thumbnail";
 
-function Card() {
+function Card({ data: { name, pic, position } }) {
+  console.log(pic);
   return (
-    // components layer에 group 적용 불가
     <article className="group card">
       <MotionBg />
-      <Thumbnail />
-      <Info />
+      <Thumbnail pic={pic} />
+      <Info name={name} position={position} />
       <Btn />
     </article>
   );

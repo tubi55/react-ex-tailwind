@@ -4,23 +4,26 @@
 
 @layer base {
   main {
-    @apply w-full h-screen bg-black/5 py-[10vh] px-[10vw];
+    @apply w-full  bg-black/5 py-[10vh] px-[10vw];
+  }
+  section {
+    @apply flex flex-wrap content-start justify-between w-[1000px] m-auto;
   }
   /* 기본 태그 요소명에 스타일 프리셋 지정 */
   button {
-    @apply px-8 py-2 mb-0 text-sm text-white transition delay-150 scale-150 rounded-full opacity-0 bg-gradient-to-br from-slate-900 to-slate-600 drop-shadow-2xl group-hover:opacity-100 group-hover:scale-100;
+    @apply px-8 py-2 mb-0 text-sm text-white transition scale-150 rounded-full opacity-0 bg-gradient-to-br from-slate-900 to-slate-600 drop-shadow-2xl group-hover:opacity-100 group-hover:scale-100;
   }
 }
 
 @layer components {
   .title_page {
-    @apply mb-20 text-6xl font-thin transition hover:text-slate-600;
+    @apply w-full mb-20 text-6xl font-thin text-center;
   }
   .card {
-    @apply w-[300px] px-10 pt-14 pb-0 text-center bg-white rounded-xl shadow-lg transition-all opacity-80 hover:opacity-100 hover:pb-14  relative;
+    @apply w-[280px] px-10 pt-16 pb-4 text-center bg-white rounded-xl shadow-lg transition-all opacity-80 hover:opacity-100 hover:pt-10 hover:pb-10  relative mb-10;
   }
   .thumbnail {
-    @apply relative inline-block mb-6 size-40 [&_img]:img_circle [&_img:nth-of-type(1)]:img_shadow;
+    @apply relative inline-block mb-2 size-40 [&_img]:img_circle [&_img:nth-of-type(1)]:img_shadow;
   }
   .motion_ping {
     @apply absolute top-0 left-0 opacity-50 bg-inherit size-full group-hover:animate-ping rounded-xl;
@@ -32,6 +35,6 @@
     @apply absolute object-cover rounded-full size-full;
   }
   .img_shadow {
-    @apply translate-y-4 blur-xl saturate-150 brightness-150;
+    @apply translate-y-4 blur-xl saturate-150 brightness-125;
   }
 }

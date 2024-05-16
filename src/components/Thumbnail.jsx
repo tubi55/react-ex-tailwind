@@ -1,8 +1,8 @@
-function Thumbnail() {
+function Thumbnail({ pic }) {
   return (
     <figure className="thumbnail">
-      <img src="./img/peter.jpg" alt="peter" />
-      <img src="./img/peter.jpg" alt="peter" />
+      <img src={`./img/${pic}`} alt={`${pic}`} />
+      <img src={`./img/${pic}`} alt={`${pic}`} />
     </figure>
   );
 }
