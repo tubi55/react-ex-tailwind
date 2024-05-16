@@ -1,6 +1,6 @@
 function Thumbnail() {
   return (
-    <figure className="relative inline-block mb-6 size-40">
+    <figure className="thumbnail">
       <img
         className="absolute object-cover translate-y-4 rounded-full size-full blur-xl saturate-150 brightness-150 "
         src="./img/peter.jpg"
