@@ -8,11 +8,12 @@ function App() {
 
       <section>
         {/* card */}
-        <article className="group w-[300px] px-10 pt-14 pb-0 text-center bg-white rounded-xl shadow-lg transition-all opacity-80 hover:opacity-100 hover:pb-14">
+        <article className="group w-[300px] px-10 pt-14 pb-0 text-center bg-white rounded-xl shadow-lg transition-all opacity-80 hover:opacity-100 hover:pb-14  relative">
+          <div className="absolute top-0 left-0 bg-white opacity-50 size-full group-hover:animate-ping rounded-xl"></div>
           {/* thumbnail */}
           <figure className="relative inline-block mb-6 size-40">
             <img
-              className="absolute object-cover transition delay-200 translate-y-4 rounded-full size-full blur-xl saturate-150 brightness-150 "
+              className="absolute object-cover translate-y-4 rounded-full size-full blur-xl saturate-150 brightness-150 "
               src="./img/peter.jpg"
               alt="peter"
             />
